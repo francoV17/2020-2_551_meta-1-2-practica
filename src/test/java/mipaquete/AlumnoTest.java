@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 class AlumnoTest {
 
+    private Alumno alumno = new Alumno("Pepe");
+
     @Test
     void getNombre() {
         Alumno alumno = new Alumno("Pepe");
@@ -19,6 +21,8 @@ class AlumnoTest {
     }
 
     @Test
-    void testToString() {
+    void testToString(){
+        assertEquals("Alumno{nombre='Pepe'}",alumno.toString());
     }
+
 }
