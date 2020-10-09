@@ -7,10 +7,15 @@ class AlumnoTest {
 
     @Test
     void getNombre() {
+        Alumno alumno = new Alumno("Pepe");
+        assertEquals("Pepe",alumno.getNombre());
     }
 
     @Test
     void setNombre() {
+        Alumno alumno = new Alumno("Pepe");
+        alumno.setNombre("Juan");
+        assertEquals("Juan",alumno.getNombre());
     }
 
     @Test
